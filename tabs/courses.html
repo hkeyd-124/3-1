@@ -1,0 +1,124 @@
+<div class="courses-page">
+
+<style>
+
+.courses-page{
+    padding:20px;
+    /* scroll area */
+    height:calc(100vh - 120px);
+    overflow-y:scroll;
+    overflow-x:hidden;
+}
+  
+.courses-page::-webkit-scrollbar{
+    width:10px;
+}
+
+.courses-page::-webkit-scrollbar-track{
+    background:#e5e7eb;
+    border-radius:999px;
+}
+
+.courses-page::-webkit-scrollbar-thumb{
+    background:#555;
+    border-radius:999px;
+}
+
+.courses-page::-webkit-scrollbar-thumb:hover{
+    background:#333;
+}
+  
+.courses-container{
+  max-width:900px;
+  margin:auto;
+}
+
+.courses-header{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  margin-bottom:20px;
+}
+
+.courses-title{
+  font-size:28px;
+  font-weight:bold;
+}
+
+.back-btn{
+  padding:10px 18px;
+  background:#111;
+  color:white;
+  border-radius:12px;
+  cursor:pointer;
+}
+
+/* TOPIC */
+
+.course-topic{
+  border:2px solid #333;
+  padding:16px;
+  border-radius:14px;
+  margin-bottom:14px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  cursor:pointer;
+  background:white;
+}
+
+/* LESSON */
+
+.course-lesson{
+  margin-left:30px;
+  margin-top:12px;
+  border:2px solid #333;
+  padding:14px;
+  border-radius:12px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  cursor:pointer;
+  background:white;
+  transition:0.2s;
+}
+
+.course-lesson:hover{
+  transform:translateX(5px);
+  background:#f1f5f9;
+}
+
+/* PROGRESS */
+
+.percent-circle{
+  width:55px;
+  height:55px;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-weight:bold;
+  background:#ccc;
+  color:white;
+}
+
+</style>
+
+<div class="courses-container">
+
+  <div class="courses-header">
+
+    <div class="courses-title">
+      📚 Khám phá khóa học
+    </div>
+
+    <div class="back-btn" onclick="loadHome()">
+      ← Home
+    </div>
+
+  </div>
+
+ <div id="coursesList"></div>
+</div>
+
+</div>
