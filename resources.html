@@ -2,6 +2,7 @@
 <html lang="vi">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Tài nguyên học tập</title>
 
 <style>
@@ -65,6 +66,15 @@ body{
 
 .lesson:hover{
   background:#e0e0e0;
+}
+
+@media (max-width:700px){
+  body{ padding:16px; }
+  .header{ align-items:flex-start; gap:12px; }
+  .title{ font-size:20px; }
+  .back{ flex:0 0 auto; padding:8px 10px; }
+  .topic{ align-items:flex-start; gap:10px; padding:13px; line-height:1.4; }
+  .lesson-list{ margin-left:0; }
 }
 </style>
 </head>

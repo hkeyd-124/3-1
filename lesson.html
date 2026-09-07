@@ -256,6 +256,20 @@ body{
   justify-content:space-between;
 }
 
+
+@media (max-width:700px){
+  .header-bar{ position:static; width:auto; height:auto; min-height:60px; flex-wrap:wrap; gap:10px; padding:10px 12px; }
+  .score-group{ width:100%; margin-left:0; gap:6px; padding-right:0; }
+  .score-box, .best-box, .rank-box{ flex:1; min-width:0; padding:6px 4px; font-size:12px; }
+  .container{ display:block; height:auto; min-height:0; margin-top:0; }
+  .left-panel, .right-panel{ width:100%; }
+  .left-panel{ min-height:45vh; border-right:0; border-bottom:1px solid #ddd; }
+  .right-panel{ padding:16px; overflow:visible; }
+  .tool-bar{ overflow-x:auto; flex-wrap:nowrap; }
+  .tool-btn{ flex:0 0 auto; }
+  .options{ grid-template-columns:1fr; }
+  .bottom-bar{ position:static; margin:16px; gap:10px; }
+}
 </style>
 
 </head>
